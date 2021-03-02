@@ -1,0 +1,19 @@
+{
+  "name": "puppeteer-scrapping-coinmarketcap",
+  "version": "1.0.0",
+  "description": "Scrapping no site www.coinmarketcap.com usando o puppeteer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "keywords": [
+    "scrapping",
+    "puppeteer"
+  ],
+  "author": "David Reis",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^8.2.9",
+    "puppeteer": "^8.0.0"
+  }
+}
