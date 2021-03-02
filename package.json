@@ -4,7 +4,8 @@
   "description": "Scrapping no site www.coinmarketcap.com usando o puppeteer.",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "node app.js",
+    "start": "node app.js"
   },
   "keywords": [
     "scrapping",
