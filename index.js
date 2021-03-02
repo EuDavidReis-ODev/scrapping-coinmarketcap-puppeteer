@@ -1,7 +1,7 @@
-const app = require('./app')
+const app = require('./public/javascripts/app')
 const crawler = require('./public/javascripts/puppeter_crawler')
-
-app.listen(8080,()=>{
+const PORT = process.env.PORT || '8080'
+app.listen(PORT,()=>{
     crawler()
-    console.log('Rodando na porta 8080')
+    console.log('Rodando na porta '+PORT)
 })
