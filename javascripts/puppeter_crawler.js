@@ -58,7 +58,7 @@ var splitArrayIndices =  (arr) =>{
 
 var scrapeData = async () => {
 
-        console.log("Coletando dados...")
+        console.log("Coletando dados....")
         console.time("coletando")
         const browser = await puppeteer.launch({
                 args: [
