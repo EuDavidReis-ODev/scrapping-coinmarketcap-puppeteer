@@ -60,7 +60,12 @@ var scrapeData = async () => {
 
         console.log("Coletando dados...")
         console.time("coletando")
-        const browser = await puppeteer.launch()
+        const browser = await puppeteer.launch({
+                args: [
+                  '--no-sandbox',
+                  '--disable-setuid-sandbox',
+                ],
+              })
         const page = await browser.newPage()
         await page.goto('https://coinmarketcap.com',{"waitUntil" : "networkidle0", 'timeout': 0})
         await autoScroll(page)
